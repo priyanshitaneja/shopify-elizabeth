@@ -1,0 +1,135 @@
+/*
+ * Import style components for the current template.
+ *
+ * Write your own styles after imports.
+ *
+ * Design tokens are required and encapsulated for each template.
+ * Import it from the design-tokens folder.
+ */
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: normal;
+  src: url("Gotham-Book.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: normal;
+  src: url("Gotham-BookItalic.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 300;
+  src: url("Gotham-Light.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 300;
+  src: url("Gotham-LightItalic.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  src: url("Gotham-Medium.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 500;
+  src: url("Gotham-MediumItalic.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  src: url("Gotham-Bold.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 700;
+  src: url("Gotham-BoldItalic.woff2") format("woff2"); }
+
+.form-holder {
+  max-width: 26rem;
+  margin: auto; }
+  @media (min-width: 64rem) {
+    .form-holder {
+      margin: 10rem auto; } }
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem; }
+
+.forgot-password {
+  margin-top: 2rem;
+  text-align: center; }
+  .forgot-password a {
+    font-size: 0.9rem;
+    text-decoration: none; }
+
+.form-header {
+  text-align: center;
+  margin-bottom: 3rem; }
+  .form-header a,
+  .form-header span {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500; }
+  .form-header a:hover {
+    text-decoration: underline; }
+
+.group-row {
+  display: flex;
+  justify-content: space-between; }
+  .group-row .btn {
+    width: 45%; }
+
+.input-group {
+  margin-bottom: 15px; }
+
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=text] {
+  display: block;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0.12rem;
+  border: 1px solid #D3D3D3;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  height: 2.875rem;
+  padding: 0 0.8125rem;
+  width: 100%;
+  font-weight: 300; }
+
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=tel]:focus,
+input[type=text]:focus {
+  outline: none;
+  border-color: #006FBB; }
+
+.button {
+  width: 100%; }
+
+.errors ul {
+  padding-left: 0;
+  list-style: none; }
+  .errors ul li {
+    font-size: 0.9rem;
+    color: #c8102e; }
+
+.label-hidden {
+  display: none; }
+
