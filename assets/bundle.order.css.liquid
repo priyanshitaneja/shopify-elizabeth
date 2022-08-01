@@ -1,0 +1,209 @@
+/*
+ * Import style components for the current template.
+ *
+ * Write your own styles after imports.
+ *
+ * Design tokens are required and encapsulated for each template.
+ * Import it from the design-tokens folder.
+ */
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: normal;
+  src: url("Gotham-Book.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: normal;
+  src: url("Gotham-BookItalic.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 300;
+  src: url("Gotham-Light.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 300;
+  src: url("Gotham-LightItalic.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  src: url("Gotham-Medium.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 500;
+  src: url("Gotham-MediumItalic.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  src: url("Gotham-Bold.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 700;
+  src: url("Gotham-BoldItalic.woff2") format("woff2"); }
+
+.customer-account {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 25% 1fr;
+  grid-column-gap: 15px;
+  -ms-grid-columns: 25% 15px 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 15px;
+  -ms-grid-rows: auto;
+  grid-auto-flow: column; }
+  .customer-account :nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1; }
+  .customer-account :nth-child(2) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 1; }
+  @media (max-width: 47.99rem) {
+    .customer-account {
+      grid-template-columns: 1fr;
+      grid-column-gap: 15px;
+      -ms-grid-columns: 1fr;
+      grid-auto-flow: row; }
+      .customer-account :nth-child(1) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1; } }
+
+.item {
+  margin-bottom: 0.5rem; }
+  .item:last-child {
+    margin-bottom: 0; }
+  .item .active {
+    position: relative; }
+    .item .active::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 0.4375rem solid transparent;
+      border-bottom: 0.4375rem solid transparent;
+      border-left: 0.4375rem solid #c8102e;
+      right: 0.625rem;
+      transform: rotate(90deg); }
+      @media (min-width: 48rem) {
+        .item .active::after {
+          transform: rotate(0deg); } }
+  .item a,
+  .item span {
+    display: block;
+    padding: 0.8rem 0.8rem;
+    text-decoration: none; }
+  .item span {
+    background-color: #eaeaea; }
+
+.sidebar-block h3 {
+  font-weight: 200; }
+
+.sidebar-block .email {
+  font-style: italic; }
+
+.sidebar-block .email,
+.sidebar-block .phone {
+  margin-bottom: 1rem; }
+  .sidebar-block .email a,
+  .sidebar-block .phone a {
+    text-decoration: none; }
+
+.sidebar .sidebar-block {
+  margin-bottom: 1rem; }
+  @media (min-width: 64rem) {
+    .sidebar .sidebar-block {
+      margin-bottom: 3rem; } }
+  .sidebar .sidebar-block:last-child {
+    margin-bottom: 0; }
+
+.address p {
+  font-size: 0.9rem;
+  margin-bottom: 0; }
+
+.help {
+  display: none; }
+  @media (min-width: 64rem) {
+    .help {
+      display: block; } }
+
+@media (min-width: 64rem) {
+  .content-holder {
+    padding-left: 3rem; } }
+
+.content-holder h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem; }
+
+.panel {
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  background-color: #f9f9f9;
+  border: 1px solid #f1f1f1;
+  border-radius: 2px;
+  margin-bottom: 1rem; }
+
+.return-link {
+  margin-bottom: 2rem; }
+  .return-link .link {
+    text-decoration: none;
+    position: relative;
+    padding-left: 1rem; }
+    .return-link .link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 0.4375rem solid transparent;
+      border-bottom: 0.4375rem solid transparent;
+      border-left: 0.4375rem solid #c8102e;
+      left: 0;
+      transform: rotate(180deg); }
+
+.order-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem; }
+  .order-title .name {
+    font-weight: 500; }
+  .order-title .date {
+    font-size: 0.9rem; }
+
+.order-table {
+  margin-bottom: 2rem; }
+  .order-table table tr th,
+  .order-table table tr td {
+    font-size: 0.9rem; }
+
+.addresses {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 64rem) {
+    .addresses {
+      flex-direction: row; } }
+  .addresses .billing {
+    margin-bottom: 1rem; }
+    @media (min-width: 64rem) {
+      .addresses .billing {
+        margin-bottom: 0;
+        margin-right: 2rem; } }
+  .addresses .status {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem; }
+  .addresses .address p {
+    font-size: 0.9rem; }
+
